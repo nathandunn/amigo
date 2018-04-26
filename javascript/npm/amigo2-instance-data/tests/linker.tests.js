@@ -51,6 +51,9 @@ describe('linker tests', function(){
       assert.equal(l.url('WB:WBGene00003001'),
 		  'http://www.wormbase.org/get?name=WBGene00003001&class=Gene',
 		  'linker: wb gene');
+        assert.equal(l.url('WB:WBTransgene00001056'),
+            'http://www.wormbase.org/get?name=WBTransgene00001056&class=Transgene',
+            'linker: wb transgene');
         assert.equal(l.url('WB:WBRNAi00061231'),
             'http://www.wormbase.org/get?name=WBRNAi00061231&class=RNAi',
             'linker: wb RNAi');
